@@ -107,12 +107,12 @@ static NSString *subviewClassName;
     
     
     switch (self.orientation) {
-        case JQFlowViewOrientationHorizontal:{
+        case HQFlowViewOrientationHorizontal:{
             
             [_scrollView setContentOffset:CGPointMake(self.page * _pageSize.width, 0) animated:YES];
             break;
         }
-        case JQFlowViewOrientationVertical:{
+        case HQFlowViewOrientationVertical:{
             
             [_scrollView setContentOffset:CGPointMake(0, self.page * _pageSize.height) animated:YES];
             
@@ -149,7 +149,7 @@ static NSString *subviewClassName;
         return;//无需更新
     }
     switch (self.orientation) {
-        case JQFlowViewOrientationHorizontal:{
+        case HQFlowViewOrientationHorizontal:{
             CGFloat offset = _scrollView.contentOffset.x;
             
             for (NSInteger i = self.visibleRange.location; i < self.visibleRange.location + _visibleRange.length; i++) {
@@ -182,7 +182,7 @@ static NSString *subviewClassName;
             }
             break;
         }
-        case JQFlowViewOrientationVertical:{
+        case HQFlowViewOrientationVertical:{
             CGFloat offset = _scrollView.contentOffset.y;
             
             for (NSInteger i = self.visibleRange.location; i < self.visibleRange.location + _visibleRange.length; i++) {
@@ -235,10 +235,10 @@ static NSString *subviewClassName;
         };
         
         switch (self.orientation) {
-            case JQFlowViewOrientationHorizontal:
+            case HQFlowViewOrientationHorizontal:
                 cell.frame = CGRectMake(_pageSize.width * pageIndex, 0, _pageSize.width, _pageSize.height);
                 break;
-            case JQFlowViewOrientationVertical:
+            case HQFlowViewOrientationVertical:
                 cell.frame = CGRectMake(0, _pageSize.height * pageIndex, _pageSize.width, _pageSize.height);
                 break;
             default:
@@ -259,7 +259,7 @@ static NSString *subviewClassName;
     
     
     switch (self.orientation) {
-        case JQFlowViewOrientationHorizontal:{
+        case HQFlowViewOrientationHorizontal:{
             NSInteger startIndex = 0;
             for (int i =0; i < [_cells count]; i++) {
                 if (_pageSize.width * (i +1) > startPoint.x) {
@@ -297,7 +297,7 @@ static NSString *subviewClassName;
             }
             break;
         }
-        case JQFlowViewOrientationVertical:{
+        case HQFlowViewOrientationVertical:{
             NSInteger startIndex = 0;
             for (int i =0; i < [_cells count]; i++) {
                 if (_pageSize.height * (i +1) > startPoint.y) {
@@ -433,7 +433,7 @@ static NSString *subviewClassName;
         
         // 重置_scrollView的contentSize
         switch (self.orientation) {
-            case JQFlowViewOrientationHorizontal://横向
+            case HQFlowViewOrientationHorizontal://横向
                 _scrollView.frame = CGRectMake(0, 0, _pageSize.width, _pageSize.height);
                 _scrollView.contentSize = CGSizeMake(_pageSize.width * _pageCount,0);
                 CGPoint theCenter = CGPointMake(CGRectGetMidX(self.bounds), CGRectGetMidY(self.bounds));
@@ -462,7 +462,7 @@ static NSString *subviewClassName;
                 }
                 
                 break;
-            case JQFlowViewOrientationVertical:{
+            case HQFlowViewOrientationVertical:{
                 _scrollView.frame = CGRectMake(0, 0, _pageSize.width, _pageSize.height);
                 _scrollView.contentSize = CGSizeMake(0 ,_pageSize.height * _pageCount);
                 CGPoint theCenter = CGPointMake(CGRectGetMidX(self.bounds), CGRectGetMidY(self.bounds));
@@ -531,10 +531,10 @@ static NSString *subviewClassName;
         }
         
         switch (self.orientation) {
-            case JQFlowViewOrientationHorizontal:
+            case HQFlowViewOrientationHorizontal:
                 [_scrollView setContentOffset:CGPointMake(_pageSize.width * self.page, 0) animated:YES];
                 break;
-            case JQFlowViewOrientationVertical:
+            case HQFlowViewOrientationVertical:
                 [_scrollView setContentOffset:CGPointMake(0, _pageSize.height * self.page) animated:YES];
                 break;
         }
@@ -575,10 +575,10 @@ static NSString *subviewClassName;
     NSInteger pageIndex;
     
     switch (self.orientation) {
-        case JQFlowViewOrientationHorizontal:
+        case HQFlowViewOrientationHorizontal:
             pageIndex = (int)round(_scrollView.contentOffset.x / _pageSize.width) % self.orginPageCount;
             break;
-        case JQFlowViewOrientationVertical:
+        case HQFlowViewOrientationVertical:
             pageIndex = (int)round(_scrollView.contentOffset.y / _pageSize.height) % self.orginPageCount;
             break;
         default:
@@ -589,7 +589,7 @@ static NSString *subviewClassName;
         
         if (self.orginPageCount > 1) {
             switch (self.orientation) {
-                case JQFlowViewOrientationHorizontal:
+                case HQFlowViewOrientationHorizontal:
                 {
                     if (scrollView.contentOffset.x / _pageSize.width >= 2 * self.orginPageCount) {
                         
@@ -607,7 +607,7 @@ static NSString *subviewClassName;
                     
                 }
                     break;
-                case JQFlowViewOrientationVertical:
+                case HQFlowViewOrientationVertical:
                 {
                     if (scrollView.contentOffset.y / _pageSize.height >= 2 * self.orginPageCount) {
                         
@@ -669,7 +669,7 @@ static NSString *subviewClassName;
     if (self.orginPageCount > 1 && self.isOpenAutoScroll && self.isCarousel) {
         
         switch (self.orientation) {
-            case JQFlowViewOrientationHorizontal:
+            case HQFlowViewOrientationHorizontal:
             {
                 if (self.page == floor(_scrollView.contentOffset.x / _pageSize.width)) {
                     
@@ -681,7 +681,7 @@ static NSString *subviewClassName;
                 }
             }
                 break;
-            case JQFlowViewOrientationVertical:
+            case HQFlowViewOrientationVertical:
             {
                 if (self.page == floor(_scrollView.contentOffset.y / _pageSize.height)) {
                     

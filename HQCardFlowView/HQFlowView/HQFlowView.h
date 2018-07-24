@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "HQIndexBannerSubview.h"
 
-@protocol JQFlowViewDataSource;
-@protocol JQFlowViewDelegate;
+@protocol HQFlowViewDataSource;
+@protocol HQFlowViewDelegate;
 
 /******************************
  
@@ -26,16 +26,16 @@
  ******************************/
 
 typedef enum{
-    JQFlowViewOrientationHorizontal = 0,
-    JQFlowViewOrientationVertical
-}JQFlowViewOrientation;
+    HQFlowViewOrientationHorizontal = 0,
+    HQFlowViewOrientationVertical
+}HQFlowViewOrientation;
 
 @interface HQFlowView : UIView<UIScrollViewDelegate>
 
 /**
  *  默认为横向
  */
-@property (nonatomic,assign) JQFlowViewOrientation orientation;
+@property (nonatomic,assign) HQFlowViewOrientation orientation;
 
 @property (nonatomic, strong) UIScrollView *scrollView;
 
@@ -52,8 +52,8 @@ typedef enum{
  */
 @property (nonatomic,strong) NSMutableArray *reusableCells;
 
-@property (nonatomic,assign)   id <JQFlowViewDataSource> dataSource;
-@property (nonatomic,assign)   id <JQFlowViewDelegate>   delegate;
+@property (nonatomic,assign)   id <HQFlowViewDataSource> dataSource;
+@property (nonatomic,assign)   id <HQFlowViewDelegate>   delegate;
 
 /**
  *  指示器
@@ -142,7 +142,7 @@ typedef enum{
 @end
 
 
-@protocol  JQFlowViewDelegate<NSObject>
+@protocol  HQFlowViewDelegate<NSObject>
 
 @optional
 /**
@@ -175,7 +175,7 @@ typedef enum{
 @end
 
 
-@protocol JQFlowViewDataSource <NSObject>
+@protocol HQFlowViewDataSource <NSObject>
 
 /**
  *  返回显示View的个数

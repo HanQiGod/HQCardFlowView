@@ -4,7 +4,7 @@
 //
 //  Created by HQ on 2018/7/24.
 //  Copyright © 2018年 HQ. All rights reserved.
-//。。
+//
 
 #define JkScreenHeight [UIScreen mainScreen].bounds.size.height
 #define JkScreenWidth [UIScreen mainScreen].bounds.size.width
@@ -13,7 +13,7 @@
 #import "HQFlowView.h"
 #import "HQImagePageControl.h"
 
-@interface ViewController () <JQFlowViewDelegate,JQFlowViewDataSource>
+@interface ViewController () <HQFlowViewDelegate,HQFlowViewDataSource>
 
 /**
  *  图片数组
@@ -62,7 +62,7 @@
         _pageFlowView.orginPageCount = _advArray.count;
         _pageFlowView.isOpenAutoScroll = YES;
         _pageFlowView.autoTime = 3.0;
-        _pageFlowView.orientation = JQFlowViewOrientationHorizontal;
+        _pageFlowView.orientation = HQFlowViewOrientationHorizontal;
         
     }
     return _pageFlowView;
