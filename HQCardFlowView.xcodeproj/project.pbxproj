@@ -15,6 +15,9 @@
 		7A2846A62106C7E6001298AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2846A52106C7E6001298AB /* main.m */; };
 		7A2846B02106C7E6001298AB /* HQCardFlowViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2846AF2106C7E6001298AB /* HQCardFlowViewTests.m */; };
 		7A2846BB2106C7E6001298AB /* HQCardFlowViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2846BA2106C7E6001298AB /* HQCardFlowViewUITests.m */; };
+		7A2846D12106C86B001298AB /* HQIndexBannerSubview.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2846D02106C86B001298AB /* HQIndexBannerSubview.m */; };
+		7A2846D42106C87C001298AB /* HQFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2846D32106C87C001298AB /* HQFlowView.m */; };
+		7A2846DA2106D047001298AB /* HQImagePageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2846D92106D047001298AB /* HQImagePageControl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		7A2846B62106C7E6001298AB /* HQCardFlowViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HQCardFlowViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A2846BA2106C7E6001298AB /* HQCardFlowViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HQCardFlowViewUITests.m; sourceTree = "<group>"; };
 		7A2846BC2106C7E6001298AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A2846CF2106C86B001298AB /* HQIndexBannerSubview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HQIndexBannerSubview.h; sourceTree = "<group>"; };
+		7A2846D02106C86B001298AB /* HQIndexBannerSubview.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HQIndexBannerSubview.m; sourceTree = "<group>"; };
+		7A2846D22106C87C001298AB /* HQFlowView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HQFlowView.h; sourceTree = "<group>"; };
+		7A2846D32106C87C001298AB /* HQFlowView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HQFlowView.m; sourceTree = "<group>"; };
+		7A2846D82106D047001298AB /* HQImagePageControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HQImagePageControl.h; sourceTree = "<group>"; };
+		7A2846D92106D047001298AB /* HQImagePageControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HQImagePageControl.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,7 @@
 		7A2846952106C7E5001298AB /* HQCardFlowView */ = {
 			isa = PBXGroup;
 			children = (
+				7A2846C82106C825001298AB /* HQFlowView */,
 				7A2846962106C7E5001298AB /* AppDelegate.h */,
 				7A2846972106C7E5001298AB /* AppDelegate.m */,
 				7A2846992106C7E5001298AB /* ViewController.h */,
@@ -130,6 +140,19 @@
 				7A2846BC2106C7E6001298AB /* Info.plist */,
 			);
 			path = HQCardFlowViewUITests;
+			sourceTree = "<group>";
+		};
+		7A2846C82106C825001298AB /* HQFlowView */ = {
+			isa = PBXGroup;
+			children = (
+				7A2846CF2106C86B001298AB /* HQIndexBannerSubview.h */,
+				7A2846D02106C86B001298AB /* HQIndexBannerSubview.m */,
+				7A2846D22106C87C001298AB /* HQFlowView.h */,
+				7A2846D32106C87C001298AB /* HQFlowView.m */,
+				7A2846D82106D047001298AB /* HQImagePageControl.h */,
+				7A2846D92106D047001298AB /* HQImagePageControl.m */,
+			);
+			path = HQFlowView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,7 +218,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0940;
-				ORGANIZATIONNAME = "君凯商联网";
+				ORGANIZATIONNAME = HQ;
 				TargetAttributes = {
 					7A2846922106C7E5001298AB = {
 						CreatedOnToolsVersion = 9.4;
@@ -263,8 +286,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A28469B2106C7E5001298AB /* ViewController.m in Sources */,
+				7A2846DA2106D047001298AB /* HQImagePageControl.m in Sources */,
+				7A2846D12106C86B001298AB /* HQIndexBannerSubview.m in Sources */,
 				7A2846A62106C7E6001298AB /* main.m in Sources */,
 				7A2846982106C7E5001298AB /* AppDelegate.m in Sources */,
+				7A2846D42106C87C001298AB /* HQFlowView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
