@@ -10,17 +10,17 @@
 /**
 *  当前显示cell的Size(中间页显示大小)
 *
-*  @param flowView <#flowView description#>
+*  @param flowView 
 *
-*  @return <#return value description#>
+*  @return CGSize
 */
 - (CGSize)sizeForPageInFlowView:(HQFlowView *)flowView;
 
 /**
 *  滚动到了某一列
 *
-*  @param pageNumber <#pageNumber description#>
-*  @param flowView   <#flowView description#>
+*  @param pageNumber 
+*  @param flowView   
 */
 - (void)didScrollToPage:(NSInteger)pageNumber inFlowView:(HQFlowView *)flowView;
 
@@ -30,7 +30,7 @@
 *  @param subView 点击的控件
 *  @param subIndex    点击控件的index
 *
-*  @return <#return value description#>
+*  @return 
 */
 - (void)didSelectCell:(HQIndexBannerSubview *)subView withSubViewIndex:(NSInteger)subIndex;
 ```
@@ -40,19 +40,19 @@
 /**
 *  返回显示View的个数
 *
-*  @param flowView <#flowView description#>
+*  @param flowView 
 *
-*  @return <#return value description#>
+*  @return 
 */
 - (NSInteger)numberOfPagesInFlowView:(HQFlowView *)flowView;
 
 /**
 *  给某一列设置属性
 *
-*  @param flowView <#flowView description#>
-*  @param index    <#index description#>
+*  @param flowView 
+*  @param index    
 *
-*  @return <#return value description#>
+*  @return 
 */
 - (HQIndexBannerSubview *)flowView:(HQFlowView *)flowView cellForPageAtIndex:(NSInteger)index;
 ```
