@@ -4,7 +4,7 @@
 //
 //  Created by HQ on 2018/7/24.
 //  Copyright © 2018年 HQ. All rights reserved.
-//
+//。。
 
 #define JkScreenHeight [UIScreen mainScreen].bounds.size.height
 #define JkScreenWidth [UIScreen mainScreen].bounds.size.width
