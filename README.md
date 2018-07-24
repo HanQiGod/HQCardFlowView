@@ -1,6 +1,6 @@
 # HQCardFlowView
 效果：
-![这里写图片描述](https://img-blog.csdn.net/20180724141023415?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTA5NjAyNjU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![](https://img-blog.csdn.net/20180724141023415?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTA5NjAyNjU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 
 ###  参考UITableView的UITableViewDataSource和UITableViewDelegate两个方法实现；支持五险轮播，可以加载本地图片，也可以加载网络图片，可以根据自己的需求自定义
