@@ -56,7 +56,6 @@
         _pageFlowView.delegate = self;
         _pageFlowView.dataSource = self;
         _pageFlowView.minimumPageAlpha = 0.3;
-        //        _pageFlowView.minimumPageScale = 0.96;
         _pageFlowView.leftRightMargin = 15;
         _pageFlowView.topBottomMargin = 20;
         _pageFlowView.orginPageCount = _advArray.count;
