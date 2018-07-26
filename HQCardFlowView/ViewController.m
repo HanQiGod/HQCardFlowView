@@ -90,7 +90,7 @@
 
 - (void)didSelectCell:(UIView *)subView withSubViewIndex:(NSInteger)subIndex
 {
-    
+    NSLog(@"点击第%d个广告",subIndex);
 }
 #pragma mark JQFlowViewDatasource
 - (NSInteger)numberOfPagesInFlowView:(HQFlowView *)flowView
