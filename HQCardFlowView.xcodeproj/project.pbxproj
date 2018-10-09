@@ -18,7 +18,7 @@
 		7A2846D12106C86B001298AB /* HQIndexBannerSubview.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2846D02106C86B001298AB /* HQIndexBannerSubview.m */; };
 		7A2846D42106C87C001298AB /* HQFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2846D32106C87C001298AB /* HQFlowView.m */; };
 		7A2846DA2106D047001298AB /* HQImagePageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2846D92106D047001298AB /* HQImagePageControl.m */; };
-		7AA4DA6D216C906C0001696A /* 20180724141023415.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7AA4DA6C216C906C0001696A /* 20180724141023415.gif */; };
+		7AA4DA6F216C90FB0001696A /* 20180724141023415.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7AA4DA6E216C90FB0001696A /* 20180724141023415.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +61,7 @@
 		7A2846D32106C87C001298AB /* HQFlowView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HQFlowView.m; sourceTree = "<group>"; };
 		7A2846D82106D047001298AB /* HQImagePageControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HQImagePageControl.h; sourceTree = "<group>"; };
 		7A2846D92106D047001298AB /* HQImagePageControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HQImagePageControl.m; sourceTree = "<group>"; };
-		7AA4DA6C216C906C0001696A /* 20180724141023415.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 20180724141023415.gif; sourceTree = "<group>"; };
+		7AA4DA6E216C90FB0001696A /* 20180724141023415.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 20180724141023415.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,8 +117,8 @@
 				7A2846972106C7E5001298AB /* AppDelegate.m */,
 				7A2846992106C7E5001298AB /* ViewController.h */,
 				7A28469A2106C7E5001298AB /* ViewController.m */,
+				7AA4DA6E216C90FB0001696A /* 20180724141023415.gif */,
 				7A28469C2106C7E5001298AB /* Main.storyboard */,
-				7AA4DA6C216C906C0001696A /* 20180724141023415.gif */,
 				7A28469F2106C7E6001298AB /* Assets.xcassets */,
 				7A2846A12106C7E6001298AB /* LaunchScreen.storyboard */,
 				7A2846A42106C7E6001298AB /* Info.plist */,
@@ -263,7 +263,7 @@
 			files = (
 				7A2846A32106C7E6001298AB /* LaunchScreen.storyboard in Resources */,
 				7A2846A02106C7E6001298AB /* Assets.xcassets in Resources */,
-				7AA4DA6D216C906C0001696A /* 20180724141023415.gif in Resources */,
+				7AA4DA6F216C90FB0001696A /* 20180724141023415.gif in Resources */,
 				7A28469E2106C7E5001298AB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
