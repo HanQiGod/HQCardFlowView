@@ -5,7 +5,7 @@
 ## CSDN地址：https://blog.csdn.net/u010960265/article/details/81183843
 
 效果：
-![效果图](https://github.com/HanQiGod/HQCardFlowView/HQCardFlowView/20180724141023415.gif)
+![效果图](https://github.com/HanQiGod/HQCardFlowView/blob/master/HQCardFlowView/20180724141023415.gif)
 
 
 ###  参考UITableView的UITableViewDataSource和UITableViewDelegate两个方法实现；支持五险轮播，可以加载本地图片，也可以加载网络图片，可以根据自己的需求自定义。
