@@ -4,7 +4,7 @@
 
 ## CSDN地址：https://blog.csdn.net/u010960265/article/details/81183843
 
-### 效果：
+### 效果如下图：
 
 ![效果图](https://github.com/HanQiGod/HQCardFlowView/blob/master/HQCardFlowView/20180724141023415.gif)
 
