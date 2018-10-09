@@ -1,6 +1,8 @@
 # HQCardFlowView
 
-CSDN地址：https://blog.csdn.net/u010960265/article/details/81183843
+# 3D卡片轮播，卡片轮播，无限轮播，DIY
+
+## CSDN地址：https://blog.csdn.net/u010960265/article/details/81183843
 
 效果：
 ![效果图](https://img-blog.csdn.net/20180724141023415?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTA5NjAyNjU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
