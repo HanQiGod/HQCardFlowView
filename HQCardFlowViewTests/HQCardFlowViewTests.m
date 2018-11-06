@@ -2,8 +2,10 @@
 //  HQCardFlowViewTests.m
 //  HQCardFlowViewTests
 //
-//  Created by 君凯商联网 on 2018/7/24.
-//  Copyright © 2018年 君凯商联网. All rights reserved.
+//  Created by Mr_Han on 2018/7/24.
+//  Copyright © 2018年 Mr_Han. All rights reserved.
+//  CSDN <https://blog.csdn.net/u010960265>
+//  GitHub <https://github.com/HanQiGod>
 //
 
 #import <XCTest/XCTest.h>
