@@ -2,7 +2,7 @@
 
 ### 3D卡片轮播，卡片轮播，无限轮播，DIY
 
-### [CSDN地址](https://blog.csdn.net/u010960265/article/details/81183843)
+### [博客地址](https://blog.csdn.net/u010960265/article/details/81183843)
 
 ### 效果如下图：
 
