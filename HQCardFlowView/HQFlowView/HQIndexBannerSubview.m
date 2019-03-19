@@ -35,6 +35,8 @@
 
 - (void)setSubviewsWithSuperViewBounds:(CGRect)superViewBounds {
     
+    NSLog(@"cell.coverView.alpha---%f",self.coverView.alpha);
+    
     if (CGRectEqualToRect(self.mainImageView.frame, superViewBounds)) {
         return;
     }
@@ -45,8 +47,7 @@
 
 - (UIImageView *)mainImageView {
     
-    if (_mainImageView == nil) {
-        //        _mainImageView = [[UIImageView alloc] initWithFrame:CGRectMake(JKWIDTH(2.2), JKHEIGHT(2.5), self.JK_width-JKWIDTH(4.4), self.JK_height-JKHEIGHT(5))];//原来设置
+    if (!_mainImageView) {
         _mainImageView = [[UIImageView alloc] init];
         _mainImageView.userInteractionEnabled = YES;
     }
@@ -55,8 +56,7 @@
 
 - (UIImageView *)iconImage {
     
-    if (_iconImage == nil) {
-        //        _iconImage = [[UIImageView alloc] initWithFrame:CGRectMake(-JKWIDTH(2), -JKHEIGHT(2), self.JK_width+JKWIDTH(4), self.JK_height+JKHEIGHT(4))];//图片阴影原来设置
+    if (!_iconImage) {
         _iconImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
         _iconImage.contentMode = UIViewContentModeScaleAspectFit;
     }
@@ -64,7 +64,8 @@
 }
 
 - (UIView *)coverView {
-    if (_coverView == nil) {
+    
+    if (!_coverView) {
         _coverView = [[UIView alloc] init];
         _coverView.backgroundColor = [UIColor blackColor];
     }
